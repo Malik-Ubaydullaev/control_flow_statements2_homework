@@ -1,4 +1,15 @@
 def main(a,b,c):
+    m = 0
+    if a > b:
+        if a > c:
+            m = a
+        else:
+            m = c
+    else:
+        if b > c:
+            m = b
+        else:
+            m = c
     """
     Find the largest of the numbers.
     Args:
@@ -8,4 +19,4 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    return
+    return m
