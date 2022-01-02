@@ -1,4 +1,11 @@
 def main(a,b):
+    answer = 0
+    if a == b:
+        answer = 0
+    elif a > b:
+        answer = a
+    else:
+        answer = b
     """
     Return zero if the numbers are equal, return the larger one if they are not equal.
     Args:
@@ -7,10 +14,5 @@ def main(a,b):
     Returns:
         int: return answer.
     """
-    if a == b:
-        return 0
-    elif a > b:
-        return a
-    else:
-        return b
+    return answer
         
