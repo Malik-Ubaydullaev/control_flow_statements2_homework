@@ -1,4 +1,17 @@
 def main(temp):
+    answer = ''
+    if temp < 0:
+        answer = "Freezing"
+    elif temp >= 1 and temp <= 10:
+        answer = "Very Cold"
+    elif temp >= 11 and temp <= 20:
+        answer = "Cold"
+    elif temp >= 21 and temp <= 30:
+        answer = "Normal"
+    elif temp >= 31 and temp <= 40:
+        answer = "Hot"
+    else:
+        answer = "Very Hot"
     """
     Display the message according to the following temperature conditions given to you in Celsius:
     Use the elif statments.
@@ -13,4 +26,4 @@ def main(temp):
     Returns:
         str: return answer.
     """
-    return
+    return answer
